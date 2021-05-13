@@ -6,6 +6,64 @@
   "type" : "Manifest",
   "@context" : "http://iiif.io/api/presentation/3/context.json",
   "items" : [ {
+    "width" : 3024,
+    "id" : "https://iiif-test.github.io/test2/images/IMG_8718/canvas/",
+    "label" : {
+      "none" : [ "IMG_8718" ]
+    },
+    "type" : "Canvas",
+    "items" : [ {
+      "id" : "https://iiif-test.github.io/test2/images/IMG_8718/AnnoPage/",
+      "type" : "AnnotationPage",
+      "items" : [ {
+        "motivation" : "Painting",
+        "id" : "https://iiif-test.github.io/test2/images/IMG_8718/annotation/",
+        "type" : "Annotation",
+        "body" : {
+          "service" : [ {
+            "tiles" : [ {
+              "scaleFactors" : [ 32, 16, 8, 4, 2, 1 ],
+              "width" : 1024,
+              "height" : 1024
+            } ],
+            "protocol" : "http://iiif.io/api/image",
+            "sizes" : [ {
+              "width" : 95,
+              "height" : 126
+            }, {
+              "width" : 189,
+              "height" : 252
+            }, {
+              "width" : 378,
+              "height" : 504
+            }, {
+              "width" : 756,
+              "height" : 1008
+            }, {
+              "width" : 1512,
+              "height" : 2016
+            }, {
+              "width" : 3024,
+              "height" : 4032
+            } ],
+            "profile" : "level0",
+            "width" : 3024,
+            "id" : "https://iiif-test.github.io/test2/images/IMG_8718",
+            "type" : "ImageService3",
+            "@context" : "http://iiif.io/api/image/3/context.json",
+            "height" : 4032
+          } ],
+          "format" : "image/jpeg",
+          "width" : 3024,
+          "id" : "https://iiif-test.github.io/test2/images/IMG_8718/full/max/0/default.jpg",
+          "type" : "Image",
+          "height" : 4032
+        },
+        "target" : "https://iiif-test.github.io/test2/images/IMG_8718/canvas/"
+      } ]
+    } ],
+    "height" : 4032
+  }, {
     "width" : 4032,
     "id" : "https://iiif-test.github.io/test2/images/IMG_8713/canvas/",
     "label" : {
