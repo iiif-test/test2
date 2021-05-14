@@ -1,0 +1,13 @@
+{
+  "id" : "https://iiif-test.github.io/test2/manifests/collection.json",
+  "label" : {
+    "en" : [ "All manifests loaded in iiif-test/test2 project" ]
+  },
+  "type" : "Collection",
+  "@context" : "http://iiif.io/api/presentation/3/context.json",
+  "items" : [ {
+    "@type" : "sc:Manifest",
+    "@id" : "https://iiif-test.github.io/test2//manifests/manifest2.json",
+    "label" : "Glen's fantastic March 2021 Manifest"
+  } ]
+}
