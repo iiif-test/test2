@@ -1,0 +1,136 @@
+{
+  "@context" : "http://iiif.io/api/presentation/2/context.json",
+  "@id" : "https://iiif-test.github.io/test2/manifests/toc.json",
+  "@type" : "sc:Manifest",
+  "label" : "Victoria",
+  "metadata" : [ ],
+  "description" : [ {
+    "@value" : "Pictures of Victoria.",
+    "@language" : "en"
+  } ],
+  "license" : "https://creativecommons.org/licenses/by/3.0/",
+  "sequences" : [ {
+    "@id" : "http://3b45f177-1e6a-4cab-a5a9-4bc44a1681a1",
+    "@type" : "sc:Sequence",
+    "label" : [ {
+      "@value" : "Normal Sequence",
+      "@language" : "en"
+    } ],
+    "canvases" : [ {
+      "@id" : "http://88b29214-b29a-4de3-b29a-5d59f59ece91",
+      "@type" : "sc:Canvas",
+      "label" : "Harbour",
+      "height" : 3024,
+      "width" : 4032,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://b5f1fc03-89fc-4e16-bdff-f64b0bd69011",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://iiif-test.github.io/test2/images/IMG_8711/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://iiif-test.github.io/test2/images/IMG_8711",
+            "profile" : "http://iiif.io/api/image/2/level0.json"
+          },
+          "height" : 3024,
+          "width" : 4032
+        },
+        "on" : "http://88b29214-b29a-4de3-b29a-5d59f59ece91"
+      } ],
+      "related" : ""
+    }, {
+      "@id" : "http://4f43420d-2cd1-44cd-b3ef-ce9c57952580",
+      "@type" : "sc:Canvas",
+      "label" : "Beacon Hill Park",
+      "height" : 3024,
+      "width" : 4032,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://ca8e713a-d298-4a4c-911b-c467155b8b0f",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://iiif-test.github.io/test2/images/IMG_8720/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://iiif-test.github.io/test2/images/IMG_8720",
+            "profile" : "http://iiif.io/api/image/2/level0.json"
+          },
+          "height" : 3024,
+          "width" : 4032
+        },
+        "on" : "http://4f43420d-2cd1-44cd-b3ef-ce9c57952580"
+      } ],
+      "related" : ""
+    }, {
+      "@id" : "http://09e2486f-0e50-49c8-9585-fe69f2c23811",
+      "@type" : "sc:Canvas",
+      "label" : "Garden",
+      "height" : 3024,
+      "width" : 4032,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://3ab64904-5dbc-46d1-b5c4-f6c4a1da0a9b",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://iiif-test.github.io/test2/images/IMG_8664/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://iiif-test.github.io/test2/images/IMG_8664",
+            "profile" : "http://iiif.io/api/image/2/level0.json"
+          },
+          "height" : 3024,
+          "width" : 4032
+        },
+        "on" : "http://09e2486f-0e50-49c8-9585-fe69f2c23811"
+      } ],
+      "related" : ""
+    }, {
+      "@id" : "http://438f9ff6-5906-4fc9-afa0-defb0353f71c",
+      "@type" : "sc:Canvas",
+      "label" : "Main buildings.",
+      "height" : 3024,
+      "width" : 4032,
+      "images" : [ {
+        "@context" : "http://iiif.io/api/presentation/2/context.json",
+        "@id" : "http://ef533ad9-40de-4a9b-b2fb-0654a889165a",
+        "@type" : "oa:Annotation",
+        "motivation" : "sc:painting",
+        "resource" : {
+          "@id" : "https://iiif-test.github.io/test2/images/IMG_8669/full/full/0/default.jpg",
+          "@type" : "dctypes:Image",
+          "format" : "image/jpeg",
+          "service" : {
+            "@context" : "http://iiif.io/api/image/2/context.json",
+            "@id" : "https://iiif-test.github.io/test2/images/IMG_8669",
+            "profile" : "http://iiif.io/api/image/2/level0.json"
+          },
+          "height" : 3024,
+          "width" : 4032
+        },
+        "on" : "http://438f9ff6-5906-4fc9-afa0-defb0353f71c"
+      } ],
+      "related" : ""
+    } ]
+  } ],
+  "structures" : [ {
+    "@id" : "http://example.org/iiif/book1/range/r0",
+    "@type" : "sc:Range",
+    "label" : "Victoria",
+    "canvases" : [ "http://88b29214-b29a-4de3-b29a-5d59f59ece91", "http://4f43420d-2cd1-44cd-b3ef-ce9c57952580" ]
+  }, {
+    "@id" : "http://example.org/iiif/book1/range/r1",
+    "@type" : "sc:Range",
+    "label" : "Butchart Gardens",
+    "canvases" : [ "http://09e2486f-0e50-49c8-9585-fe69f2c23811", "http://438f9ff6-5906-4fc9-afa0-defb0353f71c" ]
+  } ]
+}
