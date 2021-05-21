@@ -9,5 +9,9 @@
     "@type" : "sc:Manifest",
     "@id" : "https://iiif-test.github.io/test2//manifests/manifest2.json",
     "label" : "Glen's fantastic March 2021 Manifest"
+  }, {
+    "@type" : "sc:Manifest",
+    "@id" : "https://iiif-test.github.io/test2/manifests/toc.json",
+    "label" : "Victoria"
   } ]
 }
