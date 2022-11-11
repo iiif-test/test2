@@ -1,6 +1,6 @@
 {
     "@context": "http://iiif.io/api/presentation/3/context.json",
-    "id": "https://iiif-test.github.io/test2/0326-annotating-image-layer.json",
+    "id": "https://iiif-test.github.io/test2/manifests/0326-annotating-image-layer.json",
     "type": "Manifest",
     "label": {
         "en": [
