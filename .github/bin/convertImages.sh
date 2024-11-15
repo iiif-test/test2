@@ -4,7 +4,7 @@ convertImages() {
     local version="$1"
     for filename in "$UPLOAD_DIR/$version"/*;
     do
-        if [ -f "$filename" && "${filename##*.}" != "md"]; then
+        if [[ -f "$filename" && "${filename##*.}" != "md" ]]; then
             echo "Found image $filename"
             basename=$(basename "$filename")
             basename="${basename%.*}"
