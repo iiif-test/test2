@@ -10,6 +10,7 @@ convertImages() {
             basename="${basename%.*}"
             if [ ! -d "$IIIF_IMAGE_DIR/$basename" ]; then
                 java -jar iiif-tiler.jar -identifier "https://$USER.github.io/$PROJECT/images/" -version "$version" -output images/ $filename
+                echo "Setting info.json to: https://$USER.github.io/$PROJECT/images/$basename"
             else
                 echo "Image already exists: $IIIF_IMAGE_DIR/$basename"
             fi
