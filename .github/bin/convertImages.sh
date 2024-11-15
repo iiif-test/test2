@@ -9,7 +9,7 @@ convertImages() {
             basename=$(basename "$filename")
             basename="${basename%.*}"
             if [ ! -d "$IIIF_IMAGE_DIR/$basename" ]; then
-                java -jar iiif-tiler.jar -identifier "https://$USER.github.io/$PROJECT/images" -version "$version" -output images/ $filename
+                java -jar iiif-tiler.jar -identifier "https://$USER.github.io/$PROJECT/images/" -version "$version" -output images/ $filename
             else
                 echo "Image already exists: $IIIF_IMAGE_DIR/$basename"
             fi
@@ -28,6 +28,10 @@ fi
 IIIF_IMAGE_DIR="images"
 
 UPLOAD_DIR="images/uploads"
+userrepo=`git remote -v |grep fetch|grep -o "https://.*.git" |sed 's/https:\/\/github.com\///g'`
+USER=`echo "$userrepo" | cut -d '/' -f1`
+repo=`echo "$userrepo" | cut -d '/' -f2`
+PROJECT="${repo%.*}"
 
 convertImages 2
 convertImages 3
