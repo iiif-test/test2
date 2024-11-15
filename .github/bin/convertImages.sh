@@ -29,7 +29,11 @@ fi
 IIIF_IMAGE_DIR="images"
 
 UPLOAD_DIR="images/uploads"
-userrepo=`git remote -v |grep fetch|grep -o "https://.*.git" |sed 's/https:\/\/github.com\///g'`
+if [ -z "${GITHUB_REPOSITORY}" ]; then 
+    userrepo=`git remote -v |grep fetch|grep -o "https://.*.git" |sed 's/https:\/\/github.com\///g'`
+else
+    userrepo=`echo "$GITHUB_REPOSITORY" |sed 's/https:\/\/github.com\///g'`
+fi
 USER=`echo "$userrepo" | cut -d '/' -f1`
 repo=`echo "$userrepo" | cut -d '/' -f2`
 PROJECT="${repo%.*}"
