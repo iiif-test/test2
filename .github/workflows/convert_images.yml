@@ -22,16 +22,16 @@ jobs:
           fetch-depth: 1
       - name: Convert images
         run: .github/bin/convertImages.sh
-      #- name: commit files
-      #  run: |
-      #    git config --local user.email "action@github.com"
-      #    git config --local user.name "GitHub Action"
-      #    git config pull.rebase false
-      #    git pull origin main
-      #    git add -A
-      #    git commit -m "Create 1 manifest and IIIF derivatives" -a || echo "No changes to commit"
-      #- name: push changes
-      #  uses: ad-m/github-push-action@v0.6.0
-      #  with:
-      #    github_token: ${{ secrets.GITHUB_TOKEN }}
-      #    branch: main 
+      - name: commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git config pull.rebase false
+          git pull origin main
+          git add -A
+          git commit -m "Adding IIIF image to repository" -a || echo "No changes to commit"
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main 
