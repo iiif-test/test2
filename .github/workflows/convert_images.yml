@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - images/upload/**
+      - images/uploads/**
 permissions:
   contents: write
 
