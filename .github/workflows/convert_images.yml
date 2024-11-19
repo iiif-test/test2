@@ -22,20 +22,20 @@ jobs:
           fetch-depth: 1
       - uses: glenrobson/iiif-tiler-action@main
         with:
-          input-dir2: images/uploads/2
-          input-dir3: images/uploads/3
+          input-dir-v2: images/uploads/2
+          input-dir-v3: images/uploads/3
           output-dir: images
           manifest: images/manifest.json
-      #- name: commit files
-      #  run: |
-      #    git config --local user.email "action@github.com"
-      #    git config --local user.name "GitHub Action"
-      #    git config pull.rebase false
-      #    git pull origin main
-      #    git add -A
-      #    git commit -m "Adding IIIF image to repository" -a || echo "No changes to commit"
-      #- name: push changes
-      #  uses: ad-m/github-push-action@v0.6.0
-      #github_token: ${{ secrets.GITHUB_TOKEN }}
-      #  with:
-      #    branch: main 
+      - name: commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git config pull.rebase false
+          git pull origin main
+          git add -A
+          git commit -m "Adding IIIF image to repository" -a || echo "No changes to commit"
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main 
